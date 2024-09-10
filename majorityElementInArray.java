@@ -34,29 +34,43 @@ Example Explanation
 
 
 
-  PROGRAM:
+PROGRAM:
+import java.util.List;
+
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
     public int majorityElement(final List<Integer> A) {
-        int i,j=0,count=1,k;
-        k=A.get(0);
-        int N=A.size();
-        for(i=0;i<N;i++){
-            for(j=0;j<N;j++){
-                    if(A.get(i)==A.get(j)){
-                        count++;
-                    }
-                    else{
-                        count--;
-                        if(count==0){
-                            k=A.get(i);
-                            count=1;
-                        }
-                    }
-                
-                
+        int i, j = 0, count = 1;
+        int N = A.size();
+        int k = A.get(0);
+
+        // Finding the majority candidate
+        for (i = 1; i < N; i++) {
+            if (A.get(i) == k) {
+                count++;
+            } else {
+                count--;
+                if (count == 0) {
+                    k = A.get(i);
+                    count = 1;
+                }
             }
         }
-        return k;
+
+        // Verify if the candidate `k` is actually the majority element
+        count = 0;
+        for (i = 0; i < N; i++) {
+            if (A.get(i) == k) {
+                count++;
+            }
+        }
+
+        // Check if the count of `k` is greater than N/2
+        if (count > N / 2) {
+            return k;
+        } else {
+            // According to problem constraints, there should always be a majority element.
+            throw new IllegalStateException("No majority element found");
+        }
     }
 }
