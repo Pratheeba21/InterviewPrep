@@ -1,6 +1,4 @@
-Problem Description
- 
- 
+###Problem Description
 
 Given an array of size N, find the majority element. The majority element is the element that appears more than floor(N/2) times.
 You may assume that the array is non-empty and the majority element always exist in the array.
@@ -34,7 +32,7 @@ Example Explanation
 
 
 
-PROGRAM:
+###PROGRAM:
 import java.util.List;
 
 public class Solution {
@@ -74,3 +72,13 @@ public class Solution {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+###While running with online compiler
