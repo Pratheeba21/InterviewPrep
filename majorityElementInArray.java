@@ -82,3 +82,65 @@ public class Solution {
 
 
 ###While running with online compiler
+
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+import java.io.*;
+import java.lang.*;
+public  class Solution{
+    public int majorityElement(final List<Integer> A){
+        int i,j,count=1;
+        int N=A.size();
+        int k=A.get(0);
+        for(i=1;i<N;i++){
+            if(k==A.get(i)){
+                count++;
+            }
+            else{
+                count--;
+                if(count==0){
+                    k=A.get(i);
+                    count=1;
+                }
+            }
+        }
+        
+        count=0;
+        for(i=0;i<N;i++){
+            if(k==A.get(i)){
+                count++;
+            }
+        }
+        
+        if(count>N/2){
+            return k;
+        }
+        else{
+            throw new IllegalStateException("No majority element found");
+        }
+    }
+    
+    public static void main(String args[]){
+        Solution solution=new Solution();
+        Scanner scanner = new Scanner(System.in);
+        List<Integer> SampleList=new ArrayList<>();
+        System.out.println("Enter the number of elements:");
+        int n = scanner.nextInt();
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < n; i++) {
+            SampleList.add(scanner.nextInt());
+        }
+        scanner.close();
+
+        try{
+            int majorityElement=solution.majorityElement(SampleList);
+            System.out.println("Majority element is: "+ majorityElement); 
+        }
+        catch(IllegalStateException e){
+            System.out.println(e.getMessage());
+        }
+        
+    }
+}
