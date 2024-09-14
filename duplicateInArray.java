@@ -1,4 +1,4 @@
-Problem Description
+/*Problem Description
 
 Given a read-only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times.
 If there are multiple possible answers ( like in the sample case ), output any one, if there is no duplicate, output -1
@@ -42,10 +42,10 @@ Explanation 1:
 Explanation 2:
 No number repeats itself in the array [1, 2, 3]
 Explanation 3:
-1 and 4 repeats itself in the array [3, 4, 1, 4, 1], we can return 1 or 4
+1 and 4 repeats itself in the array [3, 4, 1, 4, 1], we can return 1 or 4*/
 
 
-###PROGRAM:
+//PROGRAM:
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
     public int repeatedNumber(final List<Integer> A) {
