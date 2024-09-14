@@ -1,4 +1,4 @@
-Problem Description
+/*Problem Description
 
 Given an integer array A of non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
@@ -42,10 +42,10 @@ Example Explanation
  In this case, 6 units of rain water (blue section) are being trapped.
 Explanation 2:
 
- No water is trapped.
+ No water is trapped.*/
 
 
-###PROGRAM:
+///PROGRAM:
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
     public int trap(final List<Integer> A) {
