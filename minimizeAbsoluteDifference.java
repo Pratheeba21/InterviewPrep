@@ -18,7 +18,7 @@ Output:
 Explanation: We get the minimum difference for a=5, b=6, c=6 as | max(a,b,c) - min(a,b,c) | = |6-5| = 1.*/
 
 
-###PROGRAM:
+//PROGRAM:
 import java.util.ArrayList;
 
 public class Solution {
