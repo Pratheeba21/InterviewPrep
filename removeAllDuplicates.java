@@ -1,4 +1,4 @@
-Problem Description
+/*Problem Description
  
  
 
@@ -53,9 +53,9 @@ Explanation 2:
 
 Updated Array: [1, 2, 3, X, X] after rearranging duplicates of 2 and 3.
 We return 3 from here.
+*/
 
-
-###PROGRAM:
+//PROGRAM:
 import java.util.ArrayList;
 
 public class Solution {
