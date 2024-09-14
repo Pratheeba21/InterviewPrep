@@ -1,4 +1,4 @@
-###Problem Description
+/*###Problem Description
 
 Given a string A consisting only of '(' and ')'.
 
@@ -45,11 +45,11 @@ Explanation 1:
  Given string is balanced so we return 1
 Explanation 2:
 
- Given string is not balanced so we return 0
+ Given string is not balanced so we return 0*/
 
 
 
-###PROGRAM:
+//PROGRAM:
 public class Solution {
     public int solve(String A) {
        int N=A.length();
