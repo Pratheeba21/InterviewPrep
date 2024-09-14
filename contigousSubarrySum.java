@@ -1,4 +1,4 @@
-###Problem Description
+/*###Problem Description
  
 Find the contiguous subarray within an array, A of length N which has the largest sum.
 
@@ -34,11 +34,11 @@ Example Explanation
 Explanation 1:
 The subarray [1, 2, 3, 4] has the maximum possible sum of 10.
 Explanation 2:
-The subarray [4,-1,2,1] has the maximum possible sum of 6.
+The subarray [4,-1,2,1] has the maximum possible sum of 6.*/
 
 
 
-### PROGRAM:
+//PROGRAM:
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
     public int maxSubArray(final List<Integer> A) {
