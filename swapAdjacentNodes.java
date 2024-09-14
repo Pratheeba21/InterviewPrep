@@ -1,4 +1,4 @@
-###Problem Description
+/*###Problem Description
  
 Given a linked list A, swap every two adjacent nodes and return its head.
 
@@ -46,10 +46,10 @@ Explanation 1:
 Explanation 2:
 
  In the second example, 3rd element i.e. 1 does not have an adjacent node, so it won't be swapped. 
+*/
 
 
-
-###PROGRAM:
+//PROGRAM:
 /**
  * Definition for singly-linked list.
  * class ListNode {
