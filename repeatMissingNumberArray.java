@@ -1,4 +1,4 @@
-###Problem Description
+/*###Problem Description
 
 
 You are given a read only array of n integers from 1 to n.
@@ -17,10 +17,10 @@ Input:[3 1 2 5 3]
 
 Output:[3, 4] 
 
-A = 3, B = 4
+A = 3, B = 4*/
 
 
-#PROGRAM:
+//PROGRAM:
 import java.util.*;
 
 public class Solution {
