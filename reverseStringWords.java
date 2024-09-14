@@ -1,4 +1,4 @@
-###Problem Description
+/*###Problem Description
  
 You are given a string A of size N.
 
@@ -41,10 +41,10 @@ Example Explanation
 Explanation 1:
     We reverse the string word by word so the string becomes "the sky is blue".
 Explanation 2:
-    We reverse the string word by word so the string becomes "this is ib".
+    We reverse the string word by word so the string becomes "this is ib".*/
 
 
-###PROGRAM:
+//PROGRAM:
 public class Solution {
     public String solve(String A) {
         int N=A.length();
